@@ -1,0 +1,79 @@
+extends base.pug
+
+block content
+  h1.my-4 Hello world, I am Adam Spindler
+
+  h2 Interests
+
+  section
+    h4 #[span.robot-icon] Machine Learning
+    p Machine learning was first introduced to me when my friend asked me to follow Andrew Ng's machine learning class on Coursera. I watched the lectures and did the assignments which gave me a basic foundation for the field. I thought it was super cool that math and programming together could be used to solve computer vision problems that seem very difficult. The next summer while working at #[a(href='./work.html#RSA') RSA] I developed an algorithm involving a CNN to detect and remove hole punch marks from scanned documents. That fall I took a class on deep learning for computer vision in which I derived and wrote a neural network from scratch. I've worked on a few different personal projects involving machine learning including my #[a(href='./projects.html#garbage-full-detector') Garbage Full Detector] and #[a(href='./projects.html#deep-feature-visualization') Deep Feature Visualization].
+
+  section
+    h4 #[span.security-icon] Security 
+    p I first got interested in computer security when I was in middle school and wanted to hack my xbox games. I started by writing simple programs to edit the binary save files for Halo 3. I eventually learned about file systems and how to reverse engineer assembly code to understand the proprietary formats used on the Xbox 360 to write #[a(href='./projects.html#velocity') Velocity]. At RIT I minored in computer security where I learned about web security, and how to write secure applications.
+
+  section
+    h4 #[span.chrome-icon] Web Development
+    p I'm interested in developing applications on the web because the platform is so huge. A new web application can be used by anyone on any device without having to install any additional software. Web applications also have a lot of components to them which I think make them more interesting. It's cool to see all the pieces work together to make it actually do something. I've done web development professionally at both #[a(href='./work.html#EagleView') EagleView] and #[a(href='./work.html#datto') datto].
+  section
+    h4 #[span.apple-icon] Teaching
+    p I love teaching other people about programming and trying to convince them to get into it. I have successfully convinced a couple of my friends and have happily tutored one of them for the past few semesters. Before I got to college I made #[a(href='https://www.youtube.com/playlist?list=PL0EE421AE8BCEBA4A') 200 C# tutorials] on YouTube for thenewboston's channel which collectively reached over 2 million views. I also made #[a(href='https://www.youtube.com/playlist?list=PL0170B6E7DD6D8810') 87 C tutorials] for my own channel and they gained over 1 million total views. Creating both of these series taught me a ton about each of the languages.
+
+  section
+    h4 #[span.code-icon] Programming Languages
+    p I like learning new languages and understanding the details in each of them. I've used almost all of the popular languages at one point or another. All of the languages in green I am pretty comfortable with and have a good understanding of how they work. The ones in orange and below I am less comfortable with but have still spent a non-trivial amount of time writing.
+
+  .code-proficiency
+    span C#
+    .progress
+      .progress-bar.bg-success(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+    span C++
+    .progress
+      .progress-bar.bg-success(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+    span Python
+    .progress
+      .progress-bar.bg-success(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+    span C
+    .progress
+      .progress-bar.bg-success(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+    span PHP
+    .progress
+      .progress-bar.bg-success(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+    span Javascript
+    .progress
+      .progress-bar.bg-success(role='progressbar', style='width: 65%', aria-valuenow='65', aria-valuemin='0', aria-valuemax='100')
+    span Java
+    .progress
+      .progress-bar.bg-caution(role='progressbar', style='width: 45%', aria-valuenow='45', aria-valuemin='0', aria-valuemax='100')
+    span Ruby
+    .progress
+      .progress-bar.bg-caution(role='progressbar', style='width: 40%', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100')
+    span Swift
+    .progress
+      .progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+    span Scala
+    .progress
+      .progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+    p.my-4
+    span git
+    .progress
+      .progress-bar.bg-info(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+    span Linux
+    .progress
+      .progress-bar.bg-info(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+    span HTML/CSS
+    .progress
+      .progress-bar.bg-info(role='progressbar', style='width: 60%', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100')
+    span SQL
+    .progress
+      .progress-bar.bg-info(role='progressbar', style='width: 60%', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100')
+    span Docker
+    .progress
+      .progress-bar.bg-info(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+    span x86
+    .progress
+      .progress-bar.bg-info(role='progressbar', style='width: 20%', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+    span PowerPC
+    .progress
+      .progress-bar.bg-info(role='progressbar', style='width: 20%', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')

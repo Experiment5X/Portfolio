@@ -1,0 +1,40 @@
+html
+  head
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons')
+    link(rel='stylesheet', href='https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css')
+    link(rel='stylesheet', href='https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css')
+    link(rel='stylesheet', href='./style/style.css')
+
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js', integrity='sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U', crossorigin='anonymous')
+    script(src='https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js', integrity='sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9', crossorigin='anonymous')
+
+    script(src='https://kit.fontawesome.com/f7ef0fa266.js')
+
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      .navbar-brand Adam Spindler 
+      #navbarNavDropdown.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          -let templateName = filename.substring(filename.lastIndexOf('/')+1)
+          li.nav-item
+            a(class=(templateName === 'index.pug') ? 'active' : '', href='./index.html').nav-link Home
+          li.nav-item
+            a(class=(templateName === 'work.pug') ? 'active' : '', href='./work.html').nav-link Work Experience 
+          li.nav-item
+            a(class=(templateName === 'education.pug') ? 'active' : '', href='./education.html').nav-link Education
+          li.nav-item
+            a(class=(templateName === 'projects.pug') ? 'active' : '', href='./projects.html').nav-link Projects
+          li.nav-item
+            a.nav-link(href='https://github.com/experiment5x') GitHub
+
+
+    .container
+      .row
+        .col-md-2
+        .col-md-8
+          .my-4
+            block content
+        .col-md-2

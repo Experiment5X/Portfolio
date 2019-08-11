@@ -1,0 +1,96 @@
+.nav-link {
+    color: hsla(0,0%,100%,.65) !important;
+}
+
+.nav-link:hover {
+    color: hsla(0,0%,100%,.95) !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        justify-content: normal !important;
+    }
+
+    .navbar-brand {
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .active::before {
+        content: '\2022';
+        position: relative;
+        left: 50%;
+        top: 1em;
+        color: white;
+        font: initial;
+    }
+}
+
+.bg-dark {
+    background-color: #4ba1b8 !important;
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+    color: #34393b;
+}
+
+.section-annotation {
+    color: grey;
+    font-size: 0.75em;
+    margin-left: 1em;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.github-icon {
+    height: 1em;
+    width: 1em;
+    content: url('./mark-github.svg');
+}
+.link-icon {
+    height: 1em;
+    width: 1em;
+    content: url('./link.svg');
+}
+
+.security-icon {
+    content: url('./lock.svg');
+    width: 1em;
+}
+
+.robot-icon {
+    content: url('./robot.svg');
+    width: 1em;
+}
+
+.code-icon {
+    content: url('./code.svg');
+    width: 1em;
+}
+
+.apple-icon {
+    content: url('./apple-alt.svg');
+    width: 1em;
+}
+
+.chrome-icon {
+    content: url('./chrome.svg');
+    width: 1em;
+}
+
+.code-proficiency {
+    margin: auto;
+    width: 67%;
+}
+
+.bg-caution {
+    background-color: #ffc400 !important;
+}
+
+.active {
+    color: white !important;
+    font-weight: bolder;
+}
