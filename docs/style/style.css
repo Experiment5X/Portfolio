@@ -52,6 +52,13 @@ section {
     margin-bottom: 3rem;
 }
 
+.portrait {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
 .github-icon {
     height: 1em;
     width: 1em;
