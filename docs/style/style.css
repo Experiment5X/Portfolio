@@ -52,6 +52,11 @@ section {
     margin-bottom: 3rem;
 }
 
+.project-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .portrait {
     width: 100%;
     display: block;
